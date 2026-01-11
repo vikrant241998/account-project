@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats & Testimonial Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<section class="container">
+    <div class="stats-grid">
+        <div class="stats-text">
+            <h2>Amazing accounting statistics showing the power of numbers.</h2>
+        </div>
+        <div class="stat-item">
+            <div class="stat-header"><span class="arrow-up">↑</span> 96%</div>
+            <p class="stat-title">Prefer cloud accounting</p>
+            <p class="stat-desc">Lorem ipsum simply dummy text printing typesetting.</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-header"><span class="arrow-up">↑</span> 98%</div>
+            <p class="stat-title">Most outsourced tasks</p>
+            <p class="stat-desc">Lorem ipsum simply dummy text printing typesetting.</p>
+        </div>
+    </div>
+
+    <div class="testimonial-wrapper">
+        <div class="slider-container">
+            <div class="testimonial-slide active">
+                <div class="profile-section">
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="User">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    </div>
+                    <p class="quote-text">This is one of the best templates I've came across. Very organized, great design style and easy around.</p>
+                </div>
+                <div class="author-info">
+                    <div class="author-details">
+                        <h4>Shoko mugikura</h4>
+                        <p>Financial manager</p>
+                    </div>
+                    <div class="nav-arrows">
+                        <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-slide">
+                <div class="profile-section">
+                    <div class="img-box">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="User">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                    </div>
+                    <p class="quote-text">Amazing experience! The interface is very intuitive and the support team is helpful.</p>
+                </div>
+                <div class="author-info">
+                    <div class="author-details">
+                        <h4>John Doe</h4>
+                        <p>CEO, TechCorp</p>
+                    </div>
+                    <div class="nav-arrows">
+                        <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const slides = document.querySelectorAll('.testimonial-slide');
+const nextBtns = document.querySelectorAll('.next-btn');
+const prevBtns = document.querySelectorAll('.prev-btn');
+let currentIndex = 0;
+let slideInterval;
+
+// Function to show slide
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    
+    if (index >= slides.length) currentIndex = 0;
+    else if (index < 0) currentIndex = slides.length - 1;
+    else currentIndex = index;
+    
+    slides[currentIndex].classList.add('active');
+}
+
+// Function to start automatic sliding
+function startAutoSlide() {
+    // Pehle purana interval clear karein taaki multiple intervals na chalein
+    clearInterval(slideInterval);
+    
+    slideInterval = setInterval(() => {
+        currentIndex++;
+        showSlide(currentIndex);
+    }, 5000); // 5000ms = 5 Seconds
+}
+
+// Event Listeners for Buttons
+nextBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        currentIndex++;
+        showSlide(currentIndex);
+        startAutoSlide(); // Click karne par timer reset hoga
+    });
+});
+
+prevBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        currentIndex--;
+        showSlide(currentIndex);
+        startAutoSlide(); // Click karne par timer reset hoga
+    });
+});
+
+// Slider ko start karein
+startAutoSlide();
+</script>
+</body>
+</html>

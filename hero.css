@@ -1,0 +1,93 @@
+.container {
+  max-width: 1200px;
+  padding: 5px 5px 5px 10vw;
+}
+
+/* Hero Section Base */
+.hero {
+  background: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%)),
+    url(./bannerImg.webp);
+  background-size: cover;
+  background-position: top;
+  min-height: 600px; /* Banner height adjust ki hai */
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 60px 0;
+}
+
+.hero-content {
+  color: white;
+  max-width: 600px; /* Thoda wide rakha hai text ke liye */
+}
+
+.hero-content h1 {
+  font-size: 65px; /* Screenshot jaisa bold look */
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  color: #ffffffc4;
+}
+
+/* Explore Button with Icon */
+.explore-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-circle {
+  background: #ecab23;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.explore-btn a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: auto;
+    padding: 0 15px;
+  }
+  /* .explore-btn {
+        justify-content: center;
+    } */
+
+  .hero-content h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+
+  /* .hero {
+        min-height: 500px;
+        text-align: center;
+    } */
+}
+
+@media (max-width: 580px) {
+  .hero-content h1 {
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header-container{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.top-bar {
+  background-color: #f0f3f5;
+  padding: 14px 3.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  font-weight: 600;
+}
+
+.top-bar a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.contact-info span {
+  margin-left: 20px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+  color: #666;
+}
+.dial-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.dial-link:hover {
+  color: #004d4d;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 3.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+.logo img {
+  width: 170px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+.active {
+  color: #999;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.btn-discuss {
+  background-color: #004d4d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-discuss:hover {
+  background-color: #003333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.address-wrapper {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+}
+/* Mobile Responsive */
+
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+    order: 3;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .btn-discuss {
+    order: 2;
+    margin-right: 15px;
+  }
+
+  .logo {
+    order: 1;
+    flex: 1;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .address-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .btn-discuss {
+    display: none;
+  }
+  .logo img {
+    width: 150px;
+  }
+}
