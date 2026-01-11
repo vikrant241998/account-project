@@ -90,4 +90,8 @@
   .hero-content h1 {
     font-size: 45px;
   }
+
+  .hero {
+    min-height: 500px;
+}
 }
