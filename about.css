@@ -1,0 +1,798 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 550px; /* Puri screen cover karega */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+
+  /* Isse text left-side ke beech (Center) mein aayega */
+  display: flex;
+  align-items: center; /* Vertically Center */
+  justify-content: flex-start; /* Horizontally Left */
+  padding-left: 50px; /* Left se thoda gap */
+}
+
+.banner-content {
+  max-width: 500px;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.btn-manage {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #2ecc71; /* Green color jaisa image mein hai */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-manage:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+/* Section two */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-main-heading {
+  font-size: 2.5rem;
+  color: #1a2b3c;
+  margin-bottom: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Flexbox Layout */
+.about-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Card Styling */
+.about-card {
+  background-color: #f2f5f7;
+  border-radius: 15px;
+  padding: 50px 30px;
+  flex: 1 1 calc(33.333% - 30px); /* Ek row mein 3 cards */
+  min-width: 280px;
+  max-width: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-card-title {
+  font-size: 1.4rem;
+  color: #1a2b3c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about-card-desc {
+  font-size: 1rem;
+  color: #6a7a8a;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  min-height: 60px;
+}
+
+/* Icon Styling */
+.about-icon-box {
+  width: 90px;
+  height: 90px;
+  background-color: #ffcc4d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.about-icon-box img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Badge Styling */
+.about-badge-new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Section three */
+.about-hero-section {
+  padding: 80px 5%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.about-hero-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Image Overlapping Logic */
+.about-image-wrapper {
+  flex: 1;
+  position: relative;
+  min-width: 350px;
+  height: 450px;
+}
+
+.about-img-large img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-img-small {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.about-img-small img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 10px solid #fff;
+}
+
+/* Content Area */
+.about-content-wrapper {
+  flex: 1;
+  min-width: 350px;
+}
+
+.about-heading {
+  font-size: 42px;
+  color: #0b2238;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-subtext {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Stats Row */
+.about-stats-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about-stat-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.about-stat-icon {
+  font-size: 24px;
+  color: #e67e22; /* Orange color */
+  margin-top: 5px;
+}
+
+.about-icon-yellow {
+  color: #f1c40f; /* Yellow color */
+}
+
+.about-stat-info h2 {
+  display: inline-block;
+  font-size: 32px;
+  color: #0b2238;
+}
+
+.about-stat-info span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b2238;
+}
+
+.about-stat-info p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Button Styling */
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #004d4d; /* Dark Green */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: #003333;
+}
+
+/* Header Banner */
+.top-banner {
+  background-color: #004d40;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.top-banner a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Section four */
+.about-map-section {
+  background-color: #f4f7f9;
+  padding: 80px 5%;
+  overflow: hidden;
+}
+
+.about-map-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Text & Accordion Side */
+.about-map-text {
+  flex: 1;
+  min-width: 350px;
+}
+.about-map-heading {
+  font-size: 36px;
+  color: #1a2b3c;
+  margin-bottom: 20px;
+}
+.about-map-subtext {
+  color: #6a7a8a;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.about-acc-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.about-acc-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1a2b3c;
+  padding: 10px 0;
+}
+
+.about-acc-body {
+  padding: 10px 0;
+  color: #6a7a8a;
+  display: none; /* Initial hide */
+}
+
+/* Map & Pulse Side */
+.about-map-visual {
+  flex: 1;
+  min-width: 400px;
+  height: 500px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg")
+    no-repeat center;
+  background-size: contain;
+  position: relative;
+  opacity: 0.8;
+}
+
+.about-marker-box {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Pulse Animation 2 Seconds */
+.about-pulse-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 184, 0, 0.4);
+  border-radius: 50%;
+  animation: aboutPulse 2s infinite;
+}
+
+@keyframes aboutPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.about-marker-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffb800;
+  color: #004d4d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(255, 184, 0, 0.5);
+}
+
+/* Hover Card Styling */
+.about-location-card {
+  position: absolute;
+  bottom: 70px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.about-card-info {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.about-card-info i {
+  color: #004d4d;
+  margin-top: 4px;
+}
+.about-card-info strong {
+  font-size: 14px;
+  display: block;
+}
+.about-card-info p {
+  font-size: 12px;
+  color: #777;
+}
+
+.about-marker-box:hover .about-location-card {
+  opacity: 1;
+  visibility: visible;
+  bottom: 80px;
+}
+
+/* Testimonial Slider */
+.testimonial-container {
+  width: 100%;
+  max-width: 1300px; /* Aap apne hisaab se adjust kar sakte hain */
+  margin: 0 auto;
+  padding: 20px 3.5%;
+  box-sizing: border-box;
+}
+.testimonial-wrapper {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 100px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* width: 100%; */
+  /* max-width: 1300px; */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.testimonial-slide {
+  display: none; /* Hide all slides */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-slide.active {
+  display: flex;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 2;
+}
+
+.img-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.img-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: #fbc02d;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.quote-text {
+  font-size: 18px;
+  color: #555;
+  max-width: 450px;
+  border-right: 1px solid #eee;
+  padding-right: 30px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 30px;
+}
+
+.author-details h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.author-details p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Arrows */
+.nav-arrows {
+  display: flex;
+  gap: 10px;
+}
+.nav-arrows button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f3f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-arrows button:hover {
+  background: #e2e6ea;
+}
+
+/* Section 5 */
+
+/* Brand Slider Container ko update karein */
+.brand-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  /* Ye mask-image left aur right dono taraf shadow/fade effect degi */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+.brand-track {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+/* Baki animation code same rahega */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.brand-name {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #334155;
+  margin: 0 50px;
+  text-transform: uppercase;
+  /* opacity: 0.6; */
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Section six */
+.team-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1a2b3c;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+/* Flexbox Container */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Cards ke beech ka gap */
+}
+
+/* Card Styling */
+.team-card {
+  background: #fff;
+  width: 260px; /* Fixed width for desktop */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.image-box {
+  width: 100%;
+  height: 320px;
+  background-color: #e0e0e0; /* Fallback color */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.info p {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: capitalize;
+}
+
+/* Responsive Logic */
+@media (max-width: 1024px) {
+  .about-card {
+    flex: 1 1 calc(50% - 30px); /* Tablet par 2 cards */
+  }
+}
+
+@media (max-width: 992px) {
+  .about-hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image-wrapper {
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .about-stats-row {
+    justify-content: center;
+  }
+
+  .testimonial-wrapper {
+    border-radius: 30px;
+    padding: 30px;
+  }
+  .testimonial-slide {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .quote-text {
+    border-right: none;
+    padding-right: 0;
+    font-size: 17px;
+  }
+  .author-info {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .team-card {
+    width: calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding-left: 20px;
+    justify-content: center; /* Mobile par center align text zyada acha lagta hai */
+    text-align: center;
+  }
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-main-heading {
+    font-size: 2rem;
+  }
+  .about-card {
+    flex: 1 1 100%; /* Mobile par 1 card */
+    max-width: 450px;
+  }
+
+  .about-map-container {
+    flex-direction: column;
+  }
+  .about-map-visual {
+    height: 300px;
+    min-width: 100%;
+  }
+  .about-location-card {
+    left: -50px;
+  } /* Adjust for mobile */
+}
+
+@media (max-width: 600px) {
+  .about-img-large img {
+    width: 100%;
+    height: auto;
+  }
+  .about-img-small img {
+    width: 200px;
+    height: 220px;
+  }
+  .about-heading {
+    font-size: 30px;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 320px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+}

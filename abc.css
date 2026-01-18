@@ -29,29 +29,6 @@ body {
     overflow: hidden;
 }
 
-/* Sidebar Info Area */
-.contact-info {
-    background-color: #1e293b; /* Dark Blue Professional Color */
-    color: white;
-    padding: 40px;
-    flex: 1 1 300px;
-}
-
-.contact-info h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.contact-info p {
-    color: #cbd5e1;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.info-details p {
-    margin-bottom: 15px;
-    font-size: 14px;
-}
 
 /* Form Area */
 .contact-form {

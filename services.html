@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <!-- Header Section  -->
+    <div class="header-container">
+      <div class="top-bar">
+        <div class="promo-text">
+          Our accounting experts waiting for you! <a href="#">Contact now</a>
+        </div>
+        <div class="contact-info">
+          <span class="contact-item">
+            <a href="tel:02228899900" class="dial-link">
+              <i class="fa-solid fa-phone"></i> 0222 8899900</a
+            >
+          </span>
+          <span class="address-wrapper"
+            ><i class="fa-solid fa-location-dot"></i> Broadway, 24th Floor, San
+            Francisco</span
+          >
+        </div>
+      </div>
+
+      <header>
+        <div class="logo">
+          <a href="/"><img src="./logo.svg" alt="Logo" /></a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/blog.html">Blogs</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="/contact-us" class="btn-discuss">Let's discuss</a>
+      </header>
+    </div>
+    <!-- Section one -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1>Services Lorem ipsum.</h1>
+        <p>
+          Welcome back! Yahan aap apne finances, transactions aur account
+          settings ko asani se manage kar sakte hain. Sab kuch ek hi jagah par.
+        </p>
+        <a href="#" class="btn-manage">Manage Account</a>
+      </div>
+    </div>
+
+    <!-- Section two -->
+    <section class="serv-section">
+      <div class="serv-header">
+        <h2 class="serv-main-heading">Industries We Serve</h2>
+        <p class="serv-sub-heading">
+          Specialized expertise across multiple sectors
+        </p>
+      </div>
+
+      <div class="serv-grid-container">
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/619/619034.png"
+              alt="Real Estate"
+            />
+          </div>
+          <h4 class="serv-card-title">Real Estate & HOAs</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png"
+              alt="Healthcare"
+            />
+          </div>
+          <h4 class="serv-card-title">Healthcare</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/167/167707.png"
+              alt="Education"
+            />
+          </div>
+          <h4 class="serv-card-title">Education</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1518/1518965.png"
+              alt="Manufacturing"
+            />
+          </div>
+          <h4 class="serv-card-title">Manufacturing</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+              alt="Retail"
+            />
+          </div>
+          <h4 class="serv-card-title">Retail & E-commerce</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png"
+              alt="Non-Profit"
+            />
+          </div>
+          <h4 class="serv-card-title">Non-Profits</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4333/4333624.png"
+              alt="Construction"
+            />
+          </div>
+          <h4 class="serv-card-title">Construction</h4>
+        </div>
+
+        <div class="serv-card">
+          <div class="serv-icon-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/606/606587.png"
+              alt="Technology"
+            />
+          </div>
+          <h4 class="serv-card-title">Technology</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section three -->
+    <nav class="sticky-tabs">
+      <button onclick="scrollToSection('audit')">Audit Preparation</button>
+      <button onclick="scrollToSection('tax')">Tax Preparation</button>
+      <button onclick="scrollToSection('accounting')">
+        Accounting Solutions
+      </button>
+    </nav>
+
+    <div class="container">
+      <section id="audit" class="service-section">
+        <div class="header-icon">🔍</div>
+        <h1>Audit Preparation Services</h1>
+        <p class="subtitle">
+          Comprehensive audit support across multiple specializations...
+        </p>
+
+        <div class="main-content">
+          <div class="text-side">
+            <h2>Expert Audit Support</h2>
+            <p>
+              Our team of experienced auditors provides comprehensive support
+              throughout the entire audit lifecycle...
+            </p>
+          </div>
+          <div class="list-side">
+            <h3>Audit Specializations</h3>
+            <ul>
+              <li>CIRA (Common Interest Realty Associations)</li>
+              <li>HUDs (Housing & Urban Development Audits)</li>
+              <li>Not-for-Profit Organizations</li>
+              <li>Financial Statement Audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h4>Technology Proficient</h4>
+            <p>Expert in QuickBooks, Xero, and major platforms</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Detailed Reporting</h4>
+            <p>Clear, accurate financial statements and insights</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h4>Ongoing Support</h4>
+            <p>Consistent, reliable monthly accounting services</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tax" class="service-section">
+        <div class="header-icon">📊</div>
+        <h1>Tax Preparation Services</h1>
+        <p class="subtitle">
+          Expert tax preparation for individuals and businesses...
+        </p>
+
+        <div class="main-content">
+          <div class="text-side">
+            <h2>Comprehensive Tax Solutions</h2>
+            <p>
+              Navigate the complex world of tax preparation with confidence. Our
+              CPAs bring years of experience...
+            </p>
+          </div>
+          <div class="list-side">
+            <h3>Tax Services</h3>
+            <ul>
+              <li>Individual Income Tax (1040)</li>
+              <li>Business Tax Returns (C-Corp, S-Corp)</li>
+              <li>Multi-State Tax Filings</li>
+              <li>Tax Planning & Projections</li>
+            </ul>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h4>Technology Proficient</h4>
+            <p>Expert in QuickBooks, Xero, and major platforms</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Detailed Reporting</h4>
+            <p>Clear, accurate financial statements and insights</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h4>Ongoing Support</h4>
+            <p>Consistent, reliable monthly accounting services</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="accounting" class="service-section">
+        <div class="header-icon">💼</div>
+        <h1>Accounting Solutions</h1>
+        <p class="subtitle">
+          Full spectrum bookkeeping and financial reporting services...
+        </p>
+
+        <div class="main-content">
+          <div class="text-side">
+            <h2>Complete Accounting Support</h2>
+            <p>
+              Free yourself from day-to-day bookkeeping tasks and focus on
+              high-value advisory services...
+            </p>
+          </div>
+          <div class="list-side">
+            <h3>Accounting Services</h3>
+            <ul>
+              <li>Monthly Bookkeeping</li>
+              <li>Financial Statement Preparation</li>
+              <li>Payroll Processing</li>
+              <li>General Ledger Maintenance</li>
+            </ul>
+          </div>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h4>Technology Proficient</h4>
+            <p>Expert in QuickBooks, Xero, and major platforms</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Detailed Reporting</h4>
+            <p>Clear, accurate financial statements and insights</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h4>Ongoing Support</h4>
+            <p>Consistent, reliable monthly accounting services</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Script code -->
+    <script>
+      function scrollToSection(id) {
+        const element = document.getElementById(id);
+        const offset = 80; // Sticky header ki height ka offset
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>
